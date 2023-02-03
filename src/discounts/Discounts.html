@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descuentos</title>
+    <link rel="stylesheet" href="./css/discounts.css" />
+  </head>
+  <body>
+    <main>
+      <a class="linkHome" href="/">Regresar</a>
+      <section class="card__container">
+        <h5 class="main--title">Descuentos</h5>
+        <form action="">
+          <input type="number" id="price" autofocus />
+          <label class="price" for="price"
+            ><span class="label-text">Precio</span></label
+          >
+
+          <input type="number" id="discount" maxlength="2" />
+          <label class="discount" for="discount"
+            ><span class="label-text">Descuento</span></label
+          >
+
+          <div id="couponSection" style="display: none">
+            <input
+              autocomplete="off"
+              type="text"
+              id="inputId"
+              autofocus
+            /><label class="coupon" for="inputId">
+              <span class="label-text">CUPON</span>
+            </label>
+          </div>
+          <button id="toggleButton" type="button">
+            Dame un clic para cambiar tu cupon!!!
+          </button>
+
+          <div id="emptyValue"></div>
+
+          <div class="table">
+            <div class="table--container">
+              <div id="Pprice"></div>
+              <div id="Pdiscount"></div>
+              <div id="resultDiscount"></div>
+            </div>
+          </div>
+          <div>
+            <p></p>
+            <p></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
