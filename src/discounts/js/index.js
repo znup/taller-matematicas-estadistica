@@ -4,7 +4,7 @@ const resultDiscount = document.querySelector('#resultDiscount');
 const emptyValue = document.querySelector('#emptyValue');
 const Pprice = document.querySelector('#Pprice');
 const Pdiscount = document.querySelector('#Pdiscount');
-const toggleButton = document.querySelector('#toggleButton');
+const couponId = document.querySelector('#couponId');
 
 const calculateDiscount = () => {
   const inputPrice = parseFloat(price.value);
@@ -41,16 +41,3 @@ const calculateDiscount = () => {
 
 price.addEventListener('input', calculateDiscount);
 discount.addEventListener('input', calculateDiscount);
-
-function showInputSection() {
-  const couponSection = document.querySelector('#couponSection');
-  const toggleButton = document.querySelector('#toggleButton');
-  if (couponSection.style.display === 'none') {
-    couponSection.style.display = 'block';
-    toggleButton.innerText = 'Dame un clic para cambiar tu cupon!!!';
-  } else {
-    couponSection.style.display = 'none';
-    toggleButton.innerText = 'Ocultar seccion del cupon';
-  }
-}
-toggleButton.addEventListener('click', showInputSection);

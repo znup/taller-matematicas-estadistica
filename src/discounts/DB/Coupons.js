@@ -1,8 +1,8 @@
-export const coupons = {
-  coupon0: 'FEBRERO-2023',
-  coupon1: 'MARZO-2023',
-  coupon2: 'ABRIL-2023',
-  coupon3: 'MAYO-2023',
-  coupon4: 'JUNIO-2023',
-  coupon5: 'JULIO-2023',
-};
+const coupons = [
+  { coupon: 'FEBRERO-2023', discount: 20 },
+  { coupon: 'MARZO-2023', discount: 30 },
+  { coupon: 'ABRIL-2023', discount: 40 },
+  { coupon: 'MAYO-2023', discount: 50 },
+  { coupon: 'JUNIO-2023', discount: 80 },
+  { coupon: 'JULIO-2023', discount: 90 },
+];

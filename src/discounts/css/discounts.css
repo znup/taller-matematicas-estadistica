@@ -59,7 +59,7 @@ input[type='number']::-webkit-outer-spin-button {
 form {
   position: relative;
   width: 80%;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 textarea {
   resize: none;
@@ -138,8 +138,8 @@ input:focus + label .label-text::after {
   color: #bcafd1;
 }
 
-#inputId:focus + label::before,
-#inputId:focus + label::after,
+#couponId:focus + label::before,
+#couponId:focus + label::after,
 #discount:focus + label::before,
 #discount:focus + label::after,
 #price:focus + label::before,
@@ -208,10 +208,6 @@ input:focus + label .label-text::after {
 #toggleButton:hover {
   background: rgba(233, 22, 93, 0.2);
 }
-
-/* .inputCoupon {
-  position: relative;
-} */
 
 @media (min-width: 660px) and (max-width: 856px) {
   body {
